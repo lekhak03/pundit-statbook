@@ -11,15 +11,6 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-// test--------------------------------------------
-// let playerName = "messi"
-// fetch(`https://v3.football.api-sports.io/players?search=${playerName}&team=529`, requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
-// ------------------------------------------------------------
-
-
 // leagues json -top 5
 function get_leagues(requestOptions) {
   fetch(`https://v3.football.api-sports.io/leagues?id=39`, requestOptions)
