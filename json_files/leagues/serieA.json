@@ -1,0 +1,84 @@
+{
+    "teams": [
+        {
+            "id": 487,
+            "name": "Lazio"
+        },
+        {
+            "id": 488,
+            "name": "Sassuolo"
+        },
+        {
+            "id": 489,
+            "name": "AC Milan"
+        },
+        {
+            "id": 490,
+            "name": "Cagliari"
+        },
+        {
+            "id": 492,
+            "name": "Napoli"
+        },
+        {
+            "id": 494,
+            "name": "Udinese"
+        },
+        {
+            "id": 495,
+            "name": "Genoa"
+        },
+        {
+            "id": 496,
+            "name": "Juventus"
+        },
+        {
+            "id": 497,
+            "name": "AS Roma"
+        },
+        {
+            "id": 499,
+            "name": "Atalanta"
+        },
+        {
+            "id": 500,
+            "name": "Bologna"
+        },
+        {
+            "id": 502,
+            "name": "Fiorentina"
+        },
+        {
+            "id": 503,
+            "name": "Torino"
+        },
+        {
+            "id": 504,
+            "name": "Verona"
+        },
+        {
+            "id": 505,
+            "name": "Inter"
+        },
+        {
+            "id": 511,
+            "name": "Empoli"
+        },
+        {
+            "id": 512,
+            "name": "Frosinone"
+        },
+        {
+            "id": 514,
+            "name": "Salernitana"
+        },
+        {
+            "id": 867,
+            "name": "Lecce"
+        },
+        {
+            "id": 1579,
+            "name": "Monza"
+        }
+    ]
+}
