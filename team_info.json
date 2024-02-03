@@ -1,0 +1,76 @@
+{
+    "teams": [
+        {
+            "id": 79,
+            "name": "Lille"
+        },
+        {
+            "id": 80,
+            "name": "Lyon"
+        },
+        {
+            "id": 81,
+            "name": "Marseille"
+        },
+        {
+            "id": 82,
+            "name": "Montpellier"
+        },
+        {
+            "id": 83,
+            "name": "Nantes"
+        },
+        {
+            "id": 84,
+            "name": "Nice"
+        },
+        {
+            "id": 85,
+            "name": "Paris Saint Germain"
+        },
+        {
+            "id": 91,
+            "name": "Monaco"
+        },
+        {
+            "id": 93,
+            "name": "Reims"
+        },
+        {
+            "id": 94,
+            "name": "Rennes"
+        },
+        {
+            "id": 95,
+            "name": "Strasbourg"
+        },
+        {
+            "id": 96,
+            "name": "Toulouse"
+        },
+        {
+            "id": 97,
+            "name": "Lorient"
+        },
+        {
+            "id": 99,
+            "name": "Clermont Foot"
+        },
+        {
+            "id": 106,
+            "name": "Stade Brestois 29"
+        },
+        {
+            "id": 111,
+            "name": "LE Havre"
+        },
+        {
+            "id": 112,
+            "name": "Metz"
+        },
+        {
+            "id": 116,
+            "name": "Lens"
+        }
+    ]
+}

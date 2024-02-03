@@ -18,22 +18,3 @@ var requestOptions = {
 //   .then(result => console.log(result))
 //   .catch(error => console.log('error', error));
 // ------------------------------------------------------------
-
-
-// leagues json -top 5
-function get_leagues(requestOptions) {
-  fetch(`https://v3.football.api-sports.io/leagues?id=39`, requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-}
-
-function get_teams(requestOptions) {
-
-}
-
-function get_players(requestOptions) {
-  
-}
-
-get_leagues(requestOptions)
