@@ -1,20 +1,25 @@
 
+// script to get players based on team id in leagues and store it.
+
+// requests options
 var myHeaders = new Headers();
 let json_file = require('./json_files/secret_key.json');
 secret_key = json_file.api_key;
-
 // get the api key from the secret_key.json(not in the repo for obvious reasons) or 
 myHeaders.append("x-apisports-key", secret_key);
-
-const fs = require('fs');
 
 var requestOptions = {
   method: 'GET',
   headers: myHeaders,
   redirect: 'follow'
 };
+
+// file system and json_data
+const fs = require('fs');
 const jsonData = require("./json_files/leagues/bundesliga.json");
 
+
+// fn to request api to get squad using team id.
 function extractPlayers(jsonData) {
     let fetchPromises = [];
 
@@ -55,6 +60,4 @@ function extractPlayers(jsonData) {
         console.error('Error fetching player data:', error);
     });
 }
-
-// Call the function with your JSON data
 extractPlayers(jsonData);
