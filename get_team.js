@@ -32,7 +32,7 @@ function extractTeamInfo(data) {
     return teams;
 }
 
-let jsonData = require('./json_files/temp_json/ligue1_temp.json');
+let jsonData = require('./json_files/leagues_temp/ligue1_temp.json');
 
 const teamInfoList = extractTeamInfo(jsonData);
 
