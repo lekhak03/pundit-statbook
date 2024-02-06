@@ -16,11 +16,12 @@ var requestOptions = {
 
 // file system and json_data
 const fs = require('fs');
-const jsonData = require("./json_files/leagues/bundesliga.json");
+const file_path = './json_files/leagues/serieA.json';
+const jsonData = require(file_path);
 
 
 // fn to request api to get squad using team id.
-function extractPlayers(jsonData) {
+function extractPlayers(jsonData, file_path) {
     let fetchPromises = [];
 
     jsonData.teams.forEach((team, index) => {
@@ -44,20 +45,24 @@ function extractPlayers(jsonData) {
         data.forEach((item, index) => {
             // Check if the 'response' key exists and contains an array
             if (item.hasOwnProperty('response') && Array.isArray(item.response)) {
-                // Access the first object in the 'response' array
-                const responseObject = item.response[0];
-                // Update the corresponding team in jsonData with the players data
-                jsonData.teams[index].players = responseObject.players;
+                try {
+                    const responseObject = item.response[0];
+                    // Update the corresponding team in jsonData with the players data
+                    jsonData.teams[index].players = responseObject.players;
+                }
+                catch (e) {
+                    console.log(`FAILED TO RETRIEVE THE FOLLOWING DATA of index ${index}: ${item.response}`)
+                }
             } else {
                 console.error('Response key not found or not an array');
             }
         });
         
         // Write the updated jsonData to the file
-        fs.writeFileSync('./json_files/leagues/bundesliga.json', JSON.stringify(jsonData, null, 2), 'utf8');
+        fs.writeFileSync(file_path, JSON.stringify(jsonData, null, 2), 'utf8');
     }).catch(error => {
         // Handle any errors that occurred during the fetch
         console.error('Error fetching player data:', error);
     });
 }
-extractPlayers(jsonData);
+extractPlayers(jsonData, file_path);
