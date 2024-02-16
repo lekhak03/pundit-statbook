@@ -16,7 +16,7 @@ var requestOptions = {
 
 // file system and json_data
 const fs = require('fs');
-const file_path = './json_files/leagues/serieA.json';
+const file_path = './json_files/leagues/epl.json';
 const jsonData = require(file_path);
 
 
