@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .title h1 {
@@ -16,4 +16,10 @@ body {
 .selection {
     width: 80%;
     margin-left: 500px;
+}
+
+.chart {
+    justify-content: center;
+    text-align: center; 
+    margin-top: 200px;
 }

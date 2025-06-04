@@ -10,11 +10,3 @@ var requestOptions = {
   headers: myHeaders,
   redirect: 'follow'
 };
-
-// test--------------------------------------------
-// let playerName = "messi"
-// fetch(`https://v3.football.api-sports.io/players?search=${playerName}&team=529`, requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
-// ------------------------------------------------------------

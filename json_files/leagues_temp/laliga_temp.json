@@ -4,7 +4,7 @@
             "team": {
                 "id": 529,
                 "name": "Barcelona",
-                "code": "BAR",
+                "code": "BAR", 
                 "country": "Spain",
                 "founded": 1899,
                 "national": false,
