@@ -1,27 +1,30 @@
-# Pundit's StatBook
+# Modern dashboard design
 
-Pundit's StatBook is a backend application built using Node.js, Express, and HTML/CSS for the front-end. The primary objective of this project was to gain hands-on experience with server-side development using Express.js without relying on client-side frameworks like React.
+*Automatically synced with your [v0.app](https://v0.app) deployments*
 
-## Features
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/deep03s-projects/v0-modern-dashboard-design)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/Wkwyb4nsDSU)
 
-- **League Selection**: Users can select their top 5 favorite European football leagues.
-- **Player Stats**: Choose players from a specific team and view detailed statistics rendered with D3.js.
+## Overview
 
-## Usage
+This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
+Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
 
-To use Pundit's StatBook, follow these steps:
+## Deployment
 
-1. Clone the repository or download the source code.
-2. Install the required dependencies using `npm install`.
-3. Start the server with `node app.js` or `npm start`.
-4. Open a web browser and navigate to `http://localhost:PORT`, replacing `PORT` with the port number specified in the application.
-5. Select your top 5 European leagues from the dropdown menu.
-6. Choose a team and view player statistics, which will be visualized using D3.js.
+Your project is live at:
 
-## Development
+**[https://vercel.com/deep03s-projects/v0-modern-dashboard-design](https://vercel.com/deep03s-projects/v0-modern-dashboard-design)**
 
-For developers interested in contributing or extending the application, please refer to the `CONTRIBUTING.md` guide for coding standards and guidelines.
+## Build your app
 
-## License
+Continue building your app on:
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+**[https://v0.app/chat/projects/Wkwyb4nsDSU](https://v0.app/chat/projects/Wkwyb4nsDSU)**
+
+## How It Works
+
+1. Create and modify your project using [v0.app](https://v0.app)
+2. Deploy your chats from the v0 interface
+3. Changes are automatically pushed to this repository
+4. Vercel deploys the latest version from this repository
