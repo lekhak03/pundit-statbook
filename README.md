@@ -1,30 +1,92 @@
-# Modern dashboard design
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/deep03s-projects/v0-modern-dashboard-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/Wkwyb4nsDSU)
+# Pundit Statbook
 
-## Overview
+A modern, minimalist football analytics dashboard built with Next.js and TypeScript. Visualize and compare player stats across positions with interactive charts and a clean UI.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Live Demo
 
-## Deployment
+The site is live at: [https://pundit-statbook.vercel.app/](https://pundit-statbook.vercel.app/)
 
-Your project is live at:
+## Features
+- Role-based pages for Defenders, Forwards, Midfielders, and Goalkeepers
+- Interactive radar charts for player and system metrics
+- Responsive, dark-themed design with theme toggle
+- Modular React components for UI and data visualization
+- Fast, server-side rendering with Next.js
 
-**[https://vercel.com/deep03s-projects/v0-modern-dashboard-design](https://vercel.com/deep03s-projects/v0-modern-dashboard-design)**
+## Project Structure
+```
+├── app/                  # Next.js app directory (pages, layouts, role-based folders)
+│   ├── defenders/
+│   ├── forwards/
+│   ├── goalkeepers/
+│   ├── midfielders/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/           # Reusable React components
+│   ├── metrics-grid.tsx
+│   ├── player-stats-grid.tsx
+│   ├── radar-chart.tsx
+│   ├── status-indicator.tsx
+│   ├── system-radar-chart.tsx
+│   ├── theme-provider.tsx
+│   ├── theme-toggle.tsx
+│   └── ui/
+│       ├── badge.tsx
+│       ├── button.tsx
+│       ├── card.tsx
+│       └── input.tsx
+├── lib/                  # Utility and data logic
+│   ├── player-data.ts
+│   └── utils.ts
+├── public/               # Static assets (images, logos)
+├── styles/               # Global styles
+│   └── globals.css
+├── package.json, tsconfig.json, next.config.mjs, etc.
+└── README.md
+```
 
-## Build your app
+## Getting Started
 
-Continue building your app on:
+### Prerequisites
+- Node.js (v18+ recommended)
+- pnpm (or npm/yarn)
 
-**[https://v0.app/chat/projects/Wkwyb4nsDSU](https://v0.app/chat/projects/Wkwyb4nsDSU)**
+### Installation
+1. Clone the repository:
+	```bash
+	git clone https://github.com/Deep03/pundit-statbook.git
+	cd pundit-statbook
+	```
+2. Install dependencies:
+	```bash
+	pnpm install
+	# or
+	npm install
+	```
+3. Run the development server:
+	```bash
+	pnpm dev
+	# or
+	npm run dev
+	```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## How It Works
+## Usage
+- Browse by position (Defenders, Forwards, Midfielders, Goalkeepers)
+- View player stats and compare metrics visually
+- Toggle between light and dark themes
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## Customization
+- Add or modify components in `components/`
+- Update data logic in `lib/`
+- Change styles in `styles/globals.css` or `app/globals.css`
+
+## Credits
+- Built with [Next.js](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/)
+- UI inspired by modern sports analytics dashboards
+
+## License
+MIT

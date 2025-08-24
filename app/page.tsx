@@ -17,7 +17,7 @@ export default function HomePage() {
                 <Trophy className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <h1 className="text-xl font-serif font-black text-foreground">Player Stats Visualizer</h1>
+                <h1 className="text-xl font-serif font-black text-foreground">Pundit's StatBook</h1>
                 <p className="text-sm text-muted-foreground">Professional football analytics dashboard</p>
               </div>
             </div>
