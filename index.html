@@ -1,55 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Data Visualization</title>
-<body>
-    <div class="title">
-        <h1>Find Player Stats</h1>
-    </div>
-
-    <div class="selection">
-        <label style="color: aliceblue;" for="leagues">Select League:</label>
-        <select class="leagues">
-            <option></option>
-            <option value="140">La Liga</option>
-            <option value="39">Premier League</option>
-            <option value="61">Ligue 1</option>
-            <option value="78">Bundesliga</option>
-            <option value="135">Serie A</option>
-        </select>
-
-        <label style="color: aliceblue;" for="teams">Select Team:</label>    
-        <select class="teams">
-            <option></option>
-            <option value="140">Barca</option>
-            <option value="39">Premier League</option>
-            <option value="61">Ligue 1</option>
-            <option value="78">Bundesliga</option>
-            <option value="135">Serie A</option>
-        </select>
-
-        <label style="color: aliceblue;" for="players">Select Player:</label>  
-        <select class="players">
-            <option></option>
-            <option value="140">Barca</option>
-            <option value="39">Premier League</option>
-            <option value="61">Ligue 1</option>
-            <option value="78">Bundesliga</option>
-            <option value="135">Serie A</option>
-        </select>
-
-        <button class="submit-btn">Submit</button>
-
-        <section class=""></section>
-    </div>
-    <div class="chart">
-        <h2 style="text-align: center;">Pedri vs Frenkie de Jong</h2>
-        <svg id="radarChart" width="600" height="600"></svg>
-    </div>
-
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="chart_script.js"></script>
-</body>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
+<body>
+    <header class="header">
+        <h1>Player Stats Visualizer</h1>
+    </header>
+    <main>
+        <section class="controls">
+            <div class="dropdown-group">
+                <label for="leagues">League</label>
+                <select class="leagues" id="leagues">
+                    <option value="">Select</option>
+                    <option value="140">La Liga</option>
+                    <option value="39">Premier League</option>
+                    <option value="61">Ligue 1</option>
+                    <option value="78">Bundesliga</option>
+                    <option value="135">Serie A</option>
+                </select>
+            </div>
+            <div class="dropdown-group">
+                <label for="teams">Team</label>
+                <select class="teams" id="teams">
+                    <option value="">Select</option>
+                </select>
+            </div>
+            <div class="dropdown-group">
+                <label for="players">Player</label>
+                <select class="players" id="players">
+                    <option value="">Select</option>
+                </select>
+            </div>
+            <button class="submit-btn">Show Stats</button>
+        </section>
+        <section class="visualization">
+            <h2>Pedri vs Frenkie de Jong</h2>
+            <div class="chart-container">
+                <svg id="radarChart" width="600" height="600"></svg>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <span>Made with ⚽ by Pundit Statbook</span>
+    </footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="chart_script.js"></script>
+</body>
 </html>
